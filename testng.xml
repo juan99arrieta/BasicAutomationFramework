@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Selenium Basics">
+<suite name="Basic Automation Framework">
     <test name="First Test">
         <classes>
-            <class name="BaseTest">
+            <class name="FirstTest">
                 <methods>
-                    <include name = ""/>
+                    <include name = "firstNavigationTest"/>
                 </methods>
             </class>
         </classes>
     </test> <!-- First Test -->
-</suite> <!-- Selenium Basics -->
+</suite> <!-- Basic Automation Framework -->
