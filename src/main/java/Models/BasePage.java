@@ -11,18 +11,18 @@ public class BasePage {
     WebDriver driver;
     WebDriverWait wait;
 
-    public BasePage(WebDriver driver, WebDriverWait wait){
+    public BasePage(WebDriver driver, WebDriverWait wait) {
         this.driver = driver;
         this.wait = wait;
-        PageFactory.initElements(driver,this);
+        PageFactory.initElements(driver, this);
     }
 
-    public void clickElement(WebElement webElement){
+    public void clickElement(WebElement webElement) {
         wait.until(ExpectedConditions.visibilityOf(webElement));
         webElement.click();
     }
 
-    public void sendKeysToElement(WebElement webElement, String keys){
+    public void sendKeysToElement(WebElement webElement, String keys) {
         wait.until(ExpectedConditions.visibilityOf(webElement));
         webElement.sendKeys(keys);
     }
